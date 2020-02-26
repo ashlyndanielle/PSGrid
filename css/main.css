@@ -1,0 +1,42 @@
+/* grid-template-columns: 20px 50% auto */
+/* grid-template-rows: 1fr 1.5fr */
+/* repeat(numberOfTimes, valueToRepeat) === repeat(3, 15%) */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-rows: 51px 30%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  float: right;
+}
+ul li {
+  display: inline;
+  padding: 15px;
+}
+ul li a {
+  color: #fff;
+}
+
+header {
+  background-color: #41c7c7;
+  display: grid;
+  /* grid-template-area: ; */
+  grid-template-columns: [logo-start] fit-content(20%) [nav-start] auto [nav-end];
+}
+
+#logo {
+  padding: 15px;
+  margin-left: 15px;
+  background-color: #f3f1c7;
+  color: #298383;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+}
